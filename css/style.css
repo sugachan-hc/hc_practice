@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+/* 共通・リセット関連 */
+body {
+  margin: 0;
+  color: #000000;
+  font-family: YuGothic, "Yu Gothic",  Meiryo, sans-serif;
+}
+
+h1, h2, h3, p, figure {
+  margin: 0;
+  padding : 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 0 4%;
+}
+
+/* 見出し(共通部分) */
+h2 {
+  font-size: 34px;
+  font-weight: 700;
+  display: inline-block;
+  border-bottom: 1px solid #000000;
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+@media (min-width: 600px) {
+  h3 {
+    text-align: left;
+  }
+}
+
+/* ヘッダー
+-------------------------------------------------- */
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+/* 見出し */
+.header h1 {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: normal;
+  background-color: #000000;
+  padding: 3px 23px;
+  margin-left: 10px;
+  letter-spacing: -4px;
+}
+
+@media (min-width: 600px) {
+  .header h1 {
+    margin-left: 7px;
+  }
+}
+
+/* ナビゲーション */
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 27px;
+  font-size: 16px;
+}
+
+.header .nav li+li {
+  letter-spacing: -3.5px;
+}
+
+/* メインビジュアル
+-------------------------------------------------- */
+.headimg img {
+  height: 600px;
+  object-fit: cover;
+}
+
+@media (min-width: 600px) {
+  .headimg img {
+    width: 100%;
+  }
+}
+
+/* 自己紹介
+-------------------------------------------------- */
+.introduction {
+  padding-top: 77px;
+  text-align: center;
+}
+
+/* 見出し(個別) */
+.introduction h2 {
+  margin-bottom: 48px;
+}
+
+/* フレックス */
+@media (min-width: 600px) {
+  .introduction-group {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .introduction-picture {
+    flex: 0 0 100px;
+  }
+}
+
+/* 見出し(個別) */
+.introduction h3 {
+  margin-bottom: 6px;
+}
+
+/* 本文 */
+.introduction-text p {
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+/* 顔写真 */
+.introduction img {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+@media (min-width: 600px) {
+  .introduction img {
+    margin: 0;
+  }
+}
+
+
+/* プロフィール画像
+-------------------------------------------------- */
+.profile {
+  padding-top: 90px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .profile {
+    padding-top: 100px;
+  }
+}
+
+/* 見出し(個別) */
+.profile h2 {
+  margin-bottom: 53px;
+  letter-spacing: -7px;
+}
+
+@media (min-width: 600px) {
+  .profile h2 {
+    margin-bottom: 56px;
+  }
+}
+
+/* フレックス */
+.profile .profile-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+@media (min-width: 600px) {
+  .profile .profile-group {
+    flex-direction: row;
+    column-gap: 15px;
+  }
+}
+
+/* 見出し(個別) */
+.profile h3 {
+  letter-spacing: -5px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* 本文 */
+.profile p {
+  letter-spacing: -4px;
+  margin-bottom: 10px;
+}
+
+/* フッター
+-------------------------------------------------- */
+.footer {
+  padding-top: 106px;
+  padding-bottom: 6px;
+  border-bottom: 6px solid #000000;
+}
+
+@media (min-width: 600px) {
+  .footer {
+    border-bottom: 1px solid #000000;
+  }
+}
+
+/* コピーライト */
+.copyright {
+  text-align: center;
+  font-size: 11px;
+}
